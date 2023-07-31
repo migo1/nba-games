@@ -20,10 +20,8 @@ const TeamStats = () => {
     <div>
       {teamStats.teamStats && (
         <>
-          {/* Render the data you want to display */}
           <img src={teamStats.teamStats.team.logo} alt="Logo" />
           <p>{teamStats.teamStats.team.name}</p>
-          {/* Add more elements to display other data as needed */}
         </>
       )}
     </div>
