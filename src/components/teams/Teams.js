@@ -24,7 +24,7 @@ function Teams() {
     setSearchQuery(event.target.value);
   };
 
-  const teamWithHighestPoints = teams.reduce(
+  const teamWithHighestBuckets = teams.reduce(
     (maxTeam, currentTeam) => (
       currentTeam.points.for > maxTeam.points.for
         ? currentTeam
@@ -39,18 +39,20 @@ function Teams() {
       ) : (
         <div className="bg-sky-600 px-12 py-3 flex justify-between">
           <img
-            src={teamWithHighestPoints.team.logo}
-            alt={teamWithHighestPoints.team.name}
+            src={teamWithHighestBuckets.team.logo}
+            alt={teamWithHighestBuckets.team.name}
           />
           <div className="flex flex-col">
-            <p className="text-white text-3xl font-semibold">Team With Highest Points</p>
+            <p className="text-white text-3xl font-semibold">
+              Team With Highest Buckets
+            </p>
             <div className="mt-auto text-right">
               <h3 className="text-white text-4xl font-semibold">
-                {teamWithHighestPoints.team.name}
+                {teamWithHighestBuckets.team.name}
               </h3>
               <p className="text-2xl font-semibold text-white">
-                Points:
-                {teamWithHighestPoints.points.for}
+                Buckets :
+                {teamWithHighestBuckets.points.for}
               </p>
             </div>
           </div>
@@ -58,7 +60,7 @@ function Teams() {
       )}
 
       <div className="flex justify-between w-12/12 mx-auto bg-sky-950 py-3 px-12">
-        <p className="text-white">NBA Teams Standigs for Season 2019 - 2020</p>
+        <p className="text-white">NBA Teams Standings for Season 2019 - 2020</p>
         <input
           type="text"
           placeholder="Search teams by name"
@@ -89,12 +91,13 @@ function Teams() {
                     className="text-3xl ml-auto text-white"
                   />
                   <div className="mt-auto flex flex-col">
+                    <p className="text-white">{team.group.name}</p>
                     <h3 className="text-white text-2xl font-semibold">
                       {team.team.name}
                     </h3>
                     <p className="text-white text-xl">
-                      points :
-                      {team.points.for}
+                      Position  :
+                      {team.position}
                     </p>
                   </div>
                 </div>
