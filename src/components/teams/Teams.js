@@ -57,8 +57,8 @@ function Teams() {
         </div>
       )}
 
-      <div className="flex justify-between w-12/12 mx-auto bg-sky-950 py-3 px-2">
-        <p className="text-white">NBA Teams</p>
+      <div className="flex justify-between w-12/12 mx-auto bg-sky-950 py-3 px-12">
+        <p className="text-white">NBA Teams Standigs for Season 2019 - 2020</p>
         <input
           type="text"
           placeholder="Search teams by name"
@@ -67,7 +67,7 @@ function Teams() {
         />
       </div>
       <div>
-        <ul className="grid grid-cols-2 pb-3  w-12/12 mx-auto">
+        <ul className="grid grid-cols-2 pb-3 w-12/12 mx-auto">
           {filteredTeams.map((team, index) => (
             <Link key={team.team.id} to={`/${team.team.id}/statistics`}>
               <li
