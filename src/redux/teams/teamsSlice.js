@@ -4,6 +4,7 @@ import axios from 'axios';
 const initialState = {
   teams: [],
   errors: [],
+  loading: true,
 };
 
 export const fetchTeams = createAsyncThunk(
@@ -41,13 +42,16 @@ const teamsSlice = createSlice({
     builder
       .addCase(fetchTeams.pending, (state) => {
         state.errors = [];
+        state.loading = true;
       })
       .addCase(fetchTeams.fulfilled, (state, action) => {
         state.teams = action.payload.standingsData;
         state.errors = null;
+        state.loading = false;
       })
       .addCase(fetchTeams.rejected, (state, action) => {
         state.errors = action.payload.rawData.errors;
+        state.loading = false;
       });
   },
 });

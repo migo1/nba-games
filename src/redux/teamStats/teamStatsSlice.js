@@ -15,9 +15,9 @@ export const fetchTeamStats = createAsyncThunk(
         'https://api-basketball.p.rapidapi.com/statistics',
         {
           params: {
+            league: '12',
             season: '2019-2020',
             team: teamId,
-            league: '12',
           },
           headers: {
             'X-RapidAPI-Key':
