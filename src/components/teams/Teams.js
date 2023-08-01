@@ -1,9 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { fetchTeams } from '../../redux/teams/teamsSlice';
+import Team from './Team';
+import Header from './Header';
+import MostPoints from './MostPoints';
 
 function Teams() {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ function Teams() {
     setSearchQuery(event.target.value);
   };
 
-  const teamWithHighestBuckets = teams.reduce(
+  const teamWithMostPoints = teams.reduce(
     (maxTeam, currentTeam) => (
       currentTeam.points.for > maxTeam.points.for
         ? currentTeam
@@ -37,72 +37,18 @@ function Teams() {
       {loading ? (
         <p className="">Loading...</p>
       ) : (
-        <div className="bg-sky-600 px-12 py-3 flex justify-between">
-          <img
-            src={teamWithHighestBuckets.team.logo}
-            alt={teamWithHighestBuckets.team.name}
-          />
-          <div className="flex flex-col">
-            <p className="text-white text-3xl font-semibold">
-              Team With Highest Buckets
-            </p>
-            <div className="mt-auto text-right">
-              <h3 className="text-white text-4xl font-semibold">
-                {teamWithHighestBuckets.team.name}
-              </h3>
-              <p className="text-2xl font-semibold text-white">
-                Buckets :
-                {teamWithHighestBuckets.points.for}
-              </p>
-            </div>
-          </div>
-        </div>
+        <MostPoints teamWithMostPoints={teamWithMostPoints} />
       )}
 
-      <div className="flex justify-between w-12/12 mx-auto bg-sky-950 py-3 px-12">
-        <p className="text-white">NBA Teams Standings for Season 2019 - 2020</p>
-        <input
-          type="text"
-          placeholder="Search teams by name"
-          value={searchQuery}
-          onChange={handleSearchInputChange}
-        />
-      </div>
+      <Header
+        searchQuery={searchQuery}
+        handleSearchInputChange={handleSearchInputChange}
+      />
+
       <div>
         <ul className="grid grid-cols-2 pb-3 w-12/12 mx-auto">
           {filteredTeams.map((team, index) => (
-            <Link key={team.team.id} to={`/${team.team.id}/statistics`}>
-              <li
-                key={team.team.id}
-                className={`flex justify-between p-12 ${
-                  index % 4 === 1 || index % 4 === 2
-                    ? 'bg-sky-900'
-                    : 'bg-sky-800'
-                } `}
-              >
-                <img
-                  src={team.team.logo}
-                  alt={team.team.name}
-                  className=" h-44 w-80 object-contain"
-                />
-                <div className="flex flex-col text-right">
-                  <FontAwesomeIcon
-                    icon={faArrowAltCircleRight}
-                    className="text-3xl ml-auto text-white"
-                  />
-                  <div className="mt-auto flex flex-col">
-                    <p className="text-white">{team.group.name}</p>
-                    <h3 className="text-white text-2xl font-semibold">
-                      {team.team.name}
-                    </h3>
-                    <p className="text-white text-xl">
-                      Position  :
-                      {team.position}
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </Link>
+            <Team key={team.team.id} team={team} index={index} />
           ))}
         </ul>
       </div>
