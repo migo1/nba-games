@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <img src="./public/assets/planet.png" alt="Screenshot 1" width="300" style="display: inline-block; margin-right: 10px;">
+  <img src="./readme.png" alt="Screenshot 1" width="300" style="display: inline-block; margin-right: 10px;">
 
 </div>
 
