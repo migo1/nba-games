@@ -6,8 +6,8 @@ import Nabar from './components/Navbar/Nabar';
 function App() {
   return (
     <div className="bg-sky-700 px-12 min-h-screen">
-      <Nabar />
       <Router>
+        <Nabar />
         <Routes>
           <Route path="/" element={<Teams />} />
           <Route path="/:teamId/statistics" element={<TeamStats />} />
