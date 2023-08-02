@@ -13,3 +13,20 @@
 .list-stats:nth-child(odd) {
   background-color: rgb(7, 89, 133, var(--tw-bg-opacity));
 }
+
+@media (max-width: 487px) {
+  .text-4xl {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  img {
+    width: 200px;
+    object-fit: contain;
+  }
+}

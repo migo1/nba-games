@@ -25,7 +25,7 @@ function Team({ team, index }) {
             className="text-3xl ml-auto text-white toggleHide"
           />
           <div className="mt-auto flex flex-col">
-            <p className="text-white">{team.group.name}</p>
+            <p className="text-white conf">{team.group.name}</p>
             <h3 className="text-white text-2xl font-semibold team-name">
               {team.team.name}
             </h3>

@@ -20,7 +20,7 @@ const TeamStats = () => {
     <div className="">
       {teamStats.teamStats && (
         <div>
-          <div className="bg-sky-600 py-3 px-12 flex justify-between mb-4">
+          <div className="bg-sky-600 py-3 px-10 flex justify-between mb-4">
             <img
               src={teamStats.teamStats.team.logo}
               alt={teamStats.teamStats.team.name}
