@@ -67,6 +67,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://dev--marvelous-mandazi-c7fe36.netlify.app/)
+- [video walkthrough Link](https://www.loom.com/share/30fdc28e49524da69ffb00842d47eb26?sid=f617c166-ce16-4cd9-8177-1215b94615a4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
