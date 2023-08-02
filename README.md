@@ -160,7 +160,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Thanks to all Microverse community
+- Thanks to  [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) and [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) for the design idea.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

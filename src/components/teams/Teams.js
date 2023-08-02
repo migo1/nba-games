@@ -4,6 +4,7 @@ import { fetchTeams } from '../../redux/teams/teamsSlice';
 import Team from './Team';
 import Header from './Header';
 import MostPoints from './MostPoints';
+import './teams.css';
 
 function Teams() {
   const dispatch = useDispatch();
@@ -46,7 +47,7 @@ function Teams() {
       />
 
       <div>
-        <ul className="grid grid-cols-2 pb-3 w-12/12 mx-auto">
+        <ul className="grid grid-cols-2 align-items-stretch pb-3 w-12/12">
           {filteredTeams.map((team, index) => (
             <Team key={team.team.id} team={team} index={index} />
           ))}

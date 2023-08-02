@@ -9,7 +9,7 @@ function MostPoints({ teamWithMostPoints }) {
         alt={teamWithMostPoints.team.name}
       />
       <div className="flex flex-col">
-        <p className="text-white text-3xl font-semibold">
+        <p className="text-white text-3xl font-semibold text-right">
           Team With Highest Buckets
         </p>
         <div className="mt-auto text-right">

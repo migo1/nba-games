@@ -5,7 +5,7 @@ import Nabar from './components/Navbar/Nabar';
 
 function App() {
   return (
-    <div className="bg-sky-700 px-12 min-h-screen">
+    <div className="bg-sky-700 px-0 min-h-screen">
       <Router>
         <Nabar />
         <Routes>
