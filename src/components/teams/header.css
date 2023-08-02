@@ -1,0 +1,16 @@
+
+@media (min-width: 591px) {
+  .toogle-hide {
+    display: block;
+  }
+}
+
+@media (max-width: 590px) {
+  .toogle-hide {
+    display: none;
+  }
+
+  .search {
+    width: 100%;
+  }
+}

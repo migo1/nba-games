@@ -1,0 +1,11 @@
+@media (max-width: 394px) {
+  .text-3xl {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .text-4xl {
+    font-size: 29px;
+    line-height: 32px;
+  }
+}
