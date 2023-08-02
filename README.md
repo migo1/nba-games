@@ -49,6 +49,7 @@
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://tailwindcss.com/docs/guides/create-react-app">Tailwind Css</a></li>
+    <li><a href="https://www.css3.com/">CSS</a></li>
   </ul>
 </details>
 
@@ -67,7 +68,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://dev--marvelous-mandazi-c7fe36.netlify.app/)
-- [video walkthrough Link](https://www.loom.com/share/30fdc28e49524da69ffb00842d47eb26?sid=f617c166-ce16-4cd9-8177-1215b94615a4)
+- [video walkthrough Link](https://www.loom.com/share/4beb30d314f14e29a50857ff0459ef74?sid=bda31e3d-a60e-43ac-a9de-fac906324096)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
