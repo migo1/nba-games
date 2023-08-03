@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://dev--marvelous-mandazi-c7fe36.netlify.app/)
+- [Live Demo Link](https://migo-nba-stats.netlify.app/)
 - [video walkthrough Link](https://www.loom.com/share/4beb30d314f14e29a50857ff0459ef74?sid=bda31e3d-a60e-43ac-a9de-fac906324096)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
